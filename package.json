@@ -1,11 +1,16 @@
 {
   "name": "get-file-object-from-local-path",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create a JS File object instance from a local path",
   "main": "index.js",
   "author": "Alex Browne <alex@alexbrowne.co.uk>",
   "license": "MIT",
   "private": false,
+  "homepage": "https://github.com/abrwn/get-file-object-from-local-path#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abrwn/get-file-object-from-local-path"
+  },
   "dependencies": {
     "mime-types": "^2.1.28"
   }
