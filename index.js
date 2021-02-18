@@ -1,7 +1,7 @@
 function LocalFileData(path) {
   this.arrayBuffer = (() => {
-    const buffer = require('fs').readFileSync(path);
-    const arrayBuffer = buffer.slice(buffer.byteOffset, buffer.byteOffset + buffer.byteLength);
+    var buffer = require('fs').readFileSync(path);
+    var arrayBuffer = buffer.slice(buffer.byteOffset, buffer.byteOffset + buffer.byteLength);
     return [arrayBuffer];
   })();
 
@@ -10,7 +10,9 @@ function LocalFileData(path) {
   this.type = require('mime-types').lookup(require('path').extname(path)) || undefined;
 }
 
-const constructFileFromLocalFileData = ({ arrayBuffer, name, type }) => new File(arrayBuffer, name, { type });
+function constructFileFromLocalFileData(localFileData) {
+  return new File(localFileData.arrayBuffer, localFileData.name, { type: localFileData.type });
+};
 
 module.exports = {
   LocalFileData,
