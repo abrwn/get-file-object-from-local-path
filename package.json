@@ -1,0 +1,12 @@
+{
+  "name": "get-file-object-from-local-path",
+  "version": "1.0.0",
+  "description": "Create a JS File object instance from a local path",
+  "main": "index.js",
+  "author": "Alex Browne <alex@alexbrowne.co.uk>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "mime-types": "^2.1.28"
+  }
+}
