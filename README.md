@@ -37,7 +37,7 @@ Once created, this file behaves the same way as a JS File object created using a
 
 ## Use cases
 
-`get-file-object-from-local-path` was created to specify files to process and the send from the main thread to the renderer thread in Electron; however, a LocalFileData instance is a plain object that can be serialized/stringified and transmitted in any way required.
+`get-file-object-from-local-path` was created to specify files to process and then send from the main thread to the renderer thread in Electron; however, a LocalFileData instance is a plain object that can be serialized/stringified and transmitted in any way required.
 
 Example workflow:
 1. Client sends the path of a file to the Node.js environment
