@@ -19,7 +19,10 @@ $ npm install get-file-object-from-local-path
 The utility contains two functions:
 1. `LocalFileData()`: an object constructor function that takes an absolute path as an argument
 
-Use this within a Node environment to construct a LocalFileData object, which contains all the data required to construct a file object in the frontend client.
+Call this within a Node environment, passing an absolute path as a single argument, to construct a LocalFileData object containing all the data required to construct a file object in the frontend client:
+- `name`: the name of the original file
+- `arrayBuffer`: an arrayBuffer created using the buffer of the original file
+- `type`: a MIME type based on the extension of the source file. Returns `undefined` if it can't be deduced.
 
 ```
 // Within node.js

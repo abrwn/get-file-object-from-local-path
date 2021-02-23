@@ -1,6 +1,6 @@
 {
   "name": "get-file-object-from-local-path",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create a JS File object instance from a local path",
   "main": "index.js",
   "author": "Alex Browne <alex@alexbrowne.co.uk>",
@@ -13,5 +13,13 @@
   },
   "dependencies": {
     "mime-types": "^2.1.28"
-  }
+  },
+  "keywords": [
+    "node",
+    "electron",
+    "fs",
+    "file",
+    "buffer",
+    "arrayBuffer"
+  ]
 }
